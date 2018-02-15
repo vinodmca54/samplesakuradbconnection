@@ -19,8 +19,7 @@ import {
   ReplaceOneOptions,
   UpdateWriteOpResult
 } from 'mongodb';
-import {dbs} from '../config/bootstrap/db';
-import { json } from 'express';
+import{dbs} from '../config/bootstrap/db'
 export {
   Collection,
   CollectionInsertOneOptions,
@@ -37,10 +36,14 @@ export {
   SakuraApi
 };
 
-@Model({
-  dbConfig: dbs.user
-})
-export class User extends SapiModelMixin() {
-  @Db({field: 'name'}) @Json()
-   name: string;
+@Model({dbConfig:dbs.employee})
+export class EmpModel extends SapiModelMixin() {
+  @Db() @Json()
+  empId : number
+  @Db() @Json()
+  empName : string;
+  @Db() @Json()
+  empbranch : string;  
+  @Db() @Json()
+  empphnumber : string;
 }

@@ -1,7 +1,7 @@
 import { IDbGetParams, IFromDbOptions, SakuraApi } from '@sakuraapi/api';
 import { Collection, CollectionInsertOneOptions, CollectionOptions, Cursor, Db as MongoDb, DeleteWriteOpResultObject, InsertOneWriteOpResult, ObjectID, ReplaceOneOptions, UpdateWriteOpResult } from 'mongodb';
 export { Collection, CollectionInsertOneOptions, CollectionOptions, Cursor, MongoDb, DeleteWriteOpResultObject, InsertOneWriteOpResult, ObjectID, ReplaceOneOptions, UpdateWriteOpResult, IDbGetParams, IFromDbOptions, SakuraApi };
-declare const User_base: {
+declare const StudentModel_base: {
     new (...args: any[]): {
         _id: ObjectID;
         id: ObjectID;
@@ -34,6 +34,5 @@ declare const User_base: {
     sapi: SakuraApi;
     sapiConfig?: any;
 } & (new (...args: any[]) => {});
-export declare class User extends User_base {
-    name: string;
+export declare class StudentModel extends StudentModel_base {
 }

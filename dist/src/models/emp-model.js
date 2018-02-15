@@ -16,16 +16,26 @@ exports.Cursor = mongodb_1.Cursor;
 exports.MongoDb = mongodb_1.Db;
 exports.ObjectID = mongodb_1.ObjectID;
 const db_1 = require("../config/bootstrap/db");
-let User = class User extends api_1.SapiModelMixin() {
+let EmpModel = class EmpModel extends api_1.SapiModelMixin() {
 };
 __decorate([
-    api_1.Db({ field: 'name' }), api_1.Json(),
+    api_1.Db(), api_1.Json(),
+    __metadata("design:type", Number)
+], EmpModel.prototype, "empId", void 0);
+__decorate([
+    api_1.Db(), api_1.Json(),
     __metadata("design:type", String)
-], User.prototype, "name", void 0);
-User = __decorate([
-    api_1.Model({
-        dbConfig: db_1.dbs.user
-    })
-], User);
-exports.User = User;
-//# sourceMappingURL=user.js.map
+], EmpModel.prototype, "empName", void 0);
+__decorate([
+    api_1.Db(), api_1.Json(),
+    __metadata("design:type", String)
+], EmpModel.prototype, "empbranch", void 0);
+__decorate([
+    api_1.Db(), api_1.Json(),
+    __metadata("design:type", String)
+], EmpModel.prototype, "empphnumber", void 0);
+EmpModel = __decorate([
+    api_1.Model({ dbConfig: db_1.dbs.employee })
+], EmpModel);
+exports.EmpModel = EmpModel;
+//# sourceMappingURL=emp-model.js.map

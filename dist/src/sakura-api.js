@@ -15,9 +15,11 @@ const debugInit = require("debug");
 const helmet = require("helmet");
 const config_api_1 = require("./api/config.api");
 const user_api_1 = require("./api/user-api");
+const empdetalis_api_1 = require("./api/empdetalis-api");
 const bootstrap_indexes_1 = require("./config/bootstrap/bootstrap-indexes");
 const log_service_1 = require("./services/log-service");
 const user_1 = require("./models/user");
+const emp_model_1 = require("./models/emp-model");
 const debug = debugInit('app:bootstrap');
 class Bootstrap {
     constructor() {
@@ -29,14 +31,15 @@ class Bootstrap {
             process.env.NODE_ENV = process.env.NODE_ENV || 'development';
             this.sapi = new api_1.SakuraApi({
                 baseUrl: '/api',
-                models: [user_1.User],
+                models: [user_1.User, emp_model_1.EmpModel],
                 plugins: [],
                 providers: [
                     log_service_1.LogService
                 ],
                 routables: [
                     config_api_1.ConfigApi,
-                    user_api_1.UserApi
+                    user_api_1.UserApi,
+                    empdetalis_api_1.EmpdetalisApi,
                 ]
             });
             this.log = this.sapi.getProvider(log_service_1.LogService);

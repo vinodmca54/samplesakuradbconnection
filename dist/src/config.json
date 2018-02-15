@@ -17,7 +17,7 @@
   "dbConnections": [
     {
       "mongoClientoptions": {},
-      "name": "user",
+      "name": "sapivinod",
       "url": "mongodb://localhost:37001/sapivinod"
     }
   ],
@@ -55,6 +55,7 @@
   "npm_config_dry_run": "",
   "npm_config_legacy_bundling": "",
   "npm_config_save_dev": "",
+  "npm_package_gitHead": "0344744caff009fd6b127e54d17524d1456259ea",
   "npm_config_browser": "",
   "npm_config_commit_hooks": "true",
   "npm_config_only": "",
@@ -79,7 +80,7 @@
   "npm_config_metrics_registry": "https://registry.npmjs.org/",
   "npm_config_parseable": "",
   "npm_config_shrinkwrap": "true",
-  "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.UJXhRXiyG6/Render",
+  "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.tCKXUVl7xs/Render",
   "npm_package_scripts_lint": "scripts/lint.sh",
   "npm_package_devDependencies_supertest": "^3.0.0",
   "npm_config_init_license": "ISC",
@@ -91,7 +92,7 @@
   "npm_config_cache_max": "Infinity",
   "npm_config_init_author_email": "",
   "npm_config_sign_git_tag": "",
-  "TERM_SESSION_ID": "41DC6690-C4E1-4AB3-A13A-7B988BD44C7A",
+  "TERM_SESSION_ID": "6338F7D2-C9B5-4F1F-AA02-1ADDEA53B8E1",
   "npm_package_devDependencies__types_mongodb": "^2.2.3",
   "npm_package_devDependencies_install": "^0.10.1",
   "npm_config_cert": "",
@@ -121,7 +122,7 @@
   "npm_config_always_auth": "",
   "npm_config_logs_max": "10",
   "npm_config_prefer_online": "",
-  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.U6bbrpKtUr/Listeners",
+  "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.obQrwUk5Eo/Listeners",
   "npm_package_devDependencies__types_cors": "^2.8.1",
   "__CF_USER_TEXT_ENCODING": "0x1F6:0x0:0x0",
   "npm_package_devDependencies__types_express": "^4.0.35",
@@ -150,7 +151,7 @@
   "npm_package_devDependencies__types_request_promise_native": "^1.0.6",
   "npm_config_init_module": "/Users/vinod/.npm-init.js",
   "npm_config_userconfig": "/Users/vinod/.npmrc",
-  "PWD": "/Users/vinod/sakuapi/dist/src",
+  "PWD": "/Users/vinod/SAKUAPI/dist/src",
   "npm_package_dependencies_mongodb": "^2.2.26",
   "npm_config_cidr": "",
   "npm_package_dependencies_node_sass": "^4.5.3",
@@ -239,7 +240,6 @@
   "npm_package_devDependencies__types_jasmine": "^2.5.45",
   "npm_config_init_version": "1.0.0",
   "npm_config_umask": "0022",
-  "SECURITYSESSIONID": "186a8",
   "npm_package_dependencies_colors": "^1.1.2",
   "npm_config_scope": "",
   "npm_config_git": "git",
@@ -256,6 +256,6 @@
   "npm_config_prefix": "/usr/local",
   "npm_node_execpath": "/usr/local/bin/node",
   "_": "/usr/local/bin/node",
-  "OLDPWD": "/Users/vinod/sakuapi",
+  "OLDPWD": "/Users/vinod/SAKUAPI",
   "NODE_ENV": "development"
 }

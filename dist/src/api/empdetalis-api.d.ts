@@ -2,7 +2,7 @@
 import { SakuraApi } from '@sakuraapi/api';
 import { NextFunction, Request, Response } from 'express';
 export { SakuraApi };
-declare const UserApi_base: {
+declare const EmpdetalisApi_base: {
     new (...args: any[]): {
         sapi?: SakuraApi;
         sapiConfig?: any;
@@ -15,9 +15,7 @@ declare const UserApi_base: {
     sapi?: SakuraApi;
     sapiConfig?: any;
 } & (new (...args: any[]) => {});
-export declare class UserApi extends UserApi_base {
-    sendUsers(req: Request, res: Response, next: NextFunction): Promise<void>;
-    getUsers(req: Request, res: Response, next: NextFunction): Promise<void>;
-    updateUser(req: Request, res: Response, next: NextFunction): Promise<void>;
-    deleteUser(req: Request, res: Response, next: NextFunction): Promise<void>;
+export declare class EmpdetalisApi extends EmpdetalisApi_base {
+    getempdetails(req: Request, res: Response, next: NextFunction): void;
+    getemplogdetails(req: Request, res: Response, next: NextFunction): void;
 }

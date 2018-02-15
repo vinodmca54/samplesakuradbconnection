@@ -5,10 +5,13 @@ import * as debugInit     from 'debug';
 import * as helmet        from 'helmet';
 import {ConfigApi}        from './api/config.api';
 import {UserApi}          from './api/user-api';
+//import{Clientinfo}        from './api/empdetalis-api';
+import{EmpdetalisApi}        from './api/empdetalis-api';
 import {BootstrapIndexes} from './config/bootstrap/bootstrap-indexes';
 import {LogService}       from './services/log-service';
 import{User} from './models/user';
-
+import{EmpModel} from './models/emp-model';
+import{StudentModel} from './models/student-model';
 const debug = debugInit('app:bootstrap');
 
 export class Bootstrap {
@@ -23,7 +26,7 @@ export class Bootstrap {
 
     this.sapi = new SakuraApi({
       baseUrl: '/api',
-      models: [User],
+      models: [User,EmpModel],
       plugins: [
       ],
       providers: [
@@ -31,8 +34,9 @@ export class Bootstrap {
       ],
       routables: [
         ConfigApi,
-        UserApi
-
+        UserApi,
+        EmpdetalisApi,
+        //Clientinfo
       ]
     });
 
